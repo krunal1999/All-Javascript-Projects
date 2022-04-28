@@ -1,0 +1,104 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: pink;
+  width: 100vw;
+  /* height:auto; */
+  /* margin: 0 auto; */
+}
+
+#grid-parent {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit ,minmax(600px, 1fr));   */
+  grid-template-columns: repeat(3, 1fr);
+}
+/* #grid-parent div {
+    width: 100%;
+    height: auto;
+} */
+.item {
+  width: 100%;
+  height: 100%;
+  border:1px solid white;
+}
+.item img {
+  width: 100%;
+  height: auto;
+}
+
+.item p {
+  position: relative;
+  margin-top: -3rem;
+  color: rgb(17, 211, 17);
+  padding-left: 1rem;
+  font-size: 30px;
+}
+
+.box1 {
+  height: 60px;
+  max-width: 100vw;
+  background: rgb(65, 60, 60);
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1rem;
+  padding: 20px;
+}
+.main-div {
+  position: sticky;
+  bottom: 0;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    width: 800px;
+  }
+  * {
+    max-width: 100%;
+  }
+  #grid-parent {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit ,minmax(600px, 1fr));   */
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .box1 {
+    height: 60px;
+    width: 100vw;
+    background: rgb(65, 60, 60);
+    color: white;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 1rem;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    width: 500px;
+    height: auto;
+  }
+  * {
+    max-width: 100%;
+  }
+  #grid-parent {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit ,minmax(600px, 1fr));   */
+    grid-template-columns: 1fr;
+  }
+  .item img {
+    width: 100%;
+    height: max-content;
+  }
+  .item p {
+    position: relative;
+    margin-top: -3rem;
+    color: white;
+    padding-left: 1rem;
+    font-size: 1rems;
+  }
+}

@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(180, 178, 178);
+  width: 100vw;
+  height: auto;
+}
+nav {
+  background-color: white;
+}
+.nav-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin: 4vh auto;
+  /* border: 2px solid red; */
+  background-color: white;
+  z-index: 1;
+}
+.nav-h3 {
+  flex: 50%;
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(8, 87, 87);
+  /* border: 2px solid red; */
+}
+.nav-a {
+  flex: 50%;
+  text-align: center;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: rgb(18, 87, 160);
+  /* border: 2px solid red; */
+  width: 1rem;
+}
+.nav-active {
+    background: rgb(183, 125, 125);
+    border-radius: 2px;
+    width: 2rem;
+    color: antiquewhite;
+    padding: 0 1rem;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background: black; */
+  color: wheat;
+  width: 100%;
+  height: 6rem;
+  margin: 0 auto;
+  border-radius: 6px;
+  /* border: 2px solid red; */
+}
+h2 {
+  background: gray;
+  width: 30%;
+  margin: 1rem auto;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background: rgb(24, 22, 22);
+  padding: 1rem;
+}
+.color {
+  color: aqua;
+  margin: 0.5rem auto;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+.btn {
+  background-color: transparent;
+  width: 20%;
+  margin: 2rem auto;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 16px 32px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 3px 2px 5px;
+  /* color: white; */
+}
+.btn:hover {
+  background: rgb(189, 180, 180 , 0.2)
+}
+
+@media only screen and (max-width: 800px) {
+    h2{
+     width: 100%;
+    
+    }
+    .btn {
+        width: 100%;
+    }
+    
+}

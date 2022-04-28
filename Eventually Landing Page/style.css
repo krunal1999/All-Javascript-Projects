@@ -1,0 +1,119 @@
+:root {
+    --white: white;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  background-image: linear-gradient(to right, rgb(0, 0, 0,1),rgb(0, 0, 0, 0.8)),
+    url("img1.jpg");
+  background-position: top left;
+  background-size: cover;
+  max-width: 100%;
+  height: 100vh;
+  color: var(--white);
+  position: relative;
+}
+
+.mid{
+    position: absolute;
+    /* border: 2px solid white; */
+    top: 40%;
+    left: 2%;
+    max-width: 50%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    margin-top: 10px;
+    
+}
+.mid h1 {
+    font-size: 3rem;
+    /* border: 1px solid gray; */
+    
+}
+.mid p{
+    font: 1rem;
+    /* border: 1px solid gray; */
+    margin-top: 20px;
+    max-width: 60%;
+}
+.mid form{
+    /* border: 1px solid gray; */
+    margin-top: 20px;
+    max-width: 50%;
+}
+
+input[type="email"]{
+    border: 0.5px solid white;
+    border-radius: 4px;
+    padding: 6px;
+    background: black;
+    color: var(--white);
+    width: 75%;
+
+}
+input[type="email"]:invalid{
+    border: 1px solid red;
+}
+::placeholder{
+    color: var(--white);
+    opacity: 0.8;
+}
+
+input[type=submit]{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 6px;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 4px;
+    cursor:pointer;
+    opacity: 0.5;
+
+}
+input[type=submit].button1:hover {
+    background-color: #0cd652;
+    opacity: 1;
+    
+}
+.footer{
+    position: absolute;
+    top: 80%;
+    left:2%;
+    /* border: 2px solid white; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.logos{
+    display: flex;
+    width: 40%;
+    height: 40px;
+    
+    /* border: 2px solid rgb(247, 11, 11); */
+}
+.logos img{ 
+    max-width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-left: 10px;
+    /* border: 2px solid rgb(247, 11, 11);s */
+    background: white;
+}
+.credits{
+    display: block;
+    padding: 4px;
+    margin-top: 8spx;
+}
