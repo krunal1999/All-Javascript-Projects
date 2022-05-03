@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: lightcyans;
+  }
+  main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid red;
+    width: 60%;
+  }
+  h1 {
+    text-align: center;
+    font-family: cursive;
+    margin-bottom: 1rem;
+    color: goldenrod;
+  }
+  
+  .question {
+    background: azure;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    padding: 1rem;
+    border: 2px solid wheat;
+    margin: 1rem auto;
+    width: 70%;
+  }
+  .quetitle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    width: 70%;
+    /* border: 2px solid red; */
+  }
+  .quetitle p {
+    /* border: 2px solid red; */
+    font-size: 1.4rem;
+    margin: 1rem;
+  }
+  .btn {
+    font-size: x-large;
+    background: transparent;
+    border: 4px solid gold;
+    color: gold;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  .quetext p {
+    width: 70%;
+    margin: 1rem auto;
+  }
+  .show-txt .plusbtn {
+    display: none;
+  }
+  .minusbtn {
+    display: none;
+  }
+  .show-txt .minusbtn {
+    /* when show-txt is aaded then minusbtn will be used */
+    display: block;
+  }
+  .quetext {
+    display: none;
+  }
+  
+  .show-txt .quetext {
+    display: block;
+  }
