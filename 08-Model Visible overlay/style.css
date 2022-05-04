@@ -1,0 +1,42 @@
+body {
+    background-color: pink;
+  }
+  
+  .box1 {
+    border: 2px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    width: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box2 {
+    border: 20px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    width: 700px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .modeloverlay {
+    visibility: hidden;
+    z-index: -10;
+  }
+  
+  .openmodel {
+    visibility: visible;
+    z-index: 10;
+  }
