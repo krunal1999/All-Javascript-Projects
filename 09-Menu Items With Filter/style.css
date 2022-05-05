@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: lightcyan;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: rgba(221, 255, 229, 0.699);
+  width: 70%;
+  margin: 0 auto;
+
+  /* border: 2px solid black; */
+}
+.heading-text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3rem;
+  color: rgb(196, 178, 88);
+  border-bottom: 0.2rem solid rgb(124, 112, 42);
+}
+
+/* --------buttons style here --------------  */
+
+.btn-container {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    margin: 2rem;
+
+}
+.filter-btn{
+    border: 1px solid gold;
+    background: rgba(148, 126, 5, 0.986);
+    color: white;
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+
+/* --------buttons style ends here --------------  */
+
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-wrap: wrap;
+  background: white;
+  /* border: 2px solid red; */
+}
+
+.item-box {
+  flex: 20rem;
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  flex-wrap: wrap;
+  border: 2px solid goldenrod;
+  padding: 1rem;
+  max-width: 40%;
+}
+.img-box {
+  width: 200px;
+  height: 200px;
+}
+.item-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.item-info {
+  /* flex: 8rem; */
+  display: flex;
+  flex-direction: column;
+}
+.item-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.item-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.item-price {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.item-para {
+  padding-top: 1rem;
+}
