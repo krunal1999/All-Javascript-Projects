@@ -1,0 +1,13 @@
+what we have done in this project
+1. get random images from unsplash api
+2.then display images and display dyanmic generated html content
+3.it should have unlimited scrolling means in this project first we have taken 30 images and when user reached at end we again request server to give more 30 images.
+
+How code is running 
+1 we have to make an asyn  call to unsplash api and call function at last
+2. store recieved data in global variable array 
+3 create a function to display images on web
+4 here we are creating dynamic element and then adding attribute and we have also created helper function getAttributes helper function to reduce repeatation of code
+5. we have added an fuction to check whether user has reached at end of screen if yes then call api again.
+6.to work above function more accurately we have added imageLoaded function
+7 we have also added loader function
