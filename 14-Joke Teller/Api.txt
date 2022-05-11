@@ -1,0 +1,11 @@
+voice rss api key  kunal234
+993ad9ef3b3647e08930b0cba27f5c49
+
+https://www.voicerss.org/api/
+
+https://www.voicerss.org/sdk/javascript.aspx
+
+joke api
+https://sv443.net/jokeapi/v2/
+
+https://v2.jokeapi.dev/joke/Programming,Dark,Pun,Spooky,Christmas?blacklistFlags=nsfw,religious,political,racist,sexist,explicit
