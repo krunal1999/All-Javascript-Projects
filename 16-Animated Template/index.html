@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Theme Changer</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script defer src="index.js"></script>
+</head>
+
+<body>
+        <div class="theme-switch-wrapper">
+                <span id="toggle-icon">
+                        <span class="toggle-text">Light Mode</span>
+                        <i class="fa-solid fa-sun"></i>
+                </span>
+                <label class="theme-switch">
+                        <input type="checkbox">
+                        <div class="slider round"></div>
+                </label>
+        </div>
+        <!-- navigation -->
+        <nav id="nav" data-aos="fade-down" data-aos-delay="500"
+        data-aos-duration="1000">
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#projects">PROJECT</a>
+                <a href="#contact">CONTACT</a>
+        </nav>
+
+        <!-- section  -->
+        <section id="home">
+                <div class="title-group" >
+                        <h1 data-aos="fade-left" data-aos-delay="500"
+                        data-aos-duration="1500" data-aos-once="tru">Welcome to the Website</h1>
+                        <h2 data-aos="fade-up" data-aos-delay="500"
+                        data-aos-duration="1800">scroll below</h2>
+                </div>
+        </section>
+        <section id="about">
+                <h1>Undraw Illustration</h1>
+                <div class="about-container">
+                        <div class="image-container" data-aos="flip-left" data-aos-delay="500"
+                        data-aos-duration="1000">
+                                <h2>Web Innovation</h2>
+                                <img src="img/undraw_proud_coder_light.svg" alt="Proud Coder" id="image1" />
+                        </div>
+                        <div class="image-container" data-aos="zoom-in" data-aos-delay="900"
+                        data-aos-duration="1500">
+                                <h2>Web Innovation</h2>
+                                <img src="img/undraw_feeling_proud_light.svg" alt="Proud Coder" id="image2" />
+                        </div>
+                        <div class="image-container" data-aos="flip-right" data-aos-delay="500"
+                        data-aos-duration="1000">
+                                <h2>Web Innovation</h2>
+                                <img src="img/undraw_conceptual_idea_light.svg" alt="Proud Coder" id="image3" />
+                        </div>
+
+                </div>
+        </section>
+        <section id="projects">
+                <h1>buttons</h1>
+                <div class="buttons" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom" data-aos-delay="500"
+                data-aos-duration="1000" >
+                        <button class="primary" >Primary</button>
+                        <button class="secondary">Secondary</button>
+                        <button class="primary" disabled> primary</button>
+                        <button class="outline">Outline</button>
+                        <button class="secondary outline">alt Outline</button>
+                        <button class="outline" disabled>disabled</button>
+
+                </div>
+                <div class="text-box" id="text-box">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum vel tenetur optio beatae tempora ipsam reiciendis similique vero nemo, quibusdam omnis, necessitatibus sint. Vero quam, aspernatur dolores ad incidunt consequuntur.</p>
+                </div>
+        </section>
+        <section id="contact">
+                <h1>contact</h1>
+                <div class="social-icons">
+                        <i class="fa-brands fa-github-alt"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-facebook-square"></i>
+                        <i class="fa-brands fa-instagram-square"></i>
+                </div>
+        </section>
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
